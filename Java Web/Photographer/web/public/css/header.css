@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2020, 8:13:15 AM
+    Author     : Chucnc
+*/
+.menu{
+    width:100%;
+    height: 22px;
+    background-color: #303030;
+}
+.menu ul{
+    margin: 0 auto;
+    list-style: none;
+    margin-left:22%;
+    padding-top: 5px;
+    padding-left: 0px;
+    display: flex;
+}
+.menu ul li a{
+    border-left:1px solid #ffffff29;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: none;
+}
+.head{
+    width: 100%;
+    background-color: #722f31;
+    height: 80px;
+}
+.pre-header{
+    margin-left:22%;
+    padding-top: 18px;
+}
+.imageIcon{
+    width: 55px;
+    margin-right: 10px;
+    height:45px;
+    background-image: url('../images/icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.name{
+    margin-top: -5px;
+}
+.name a{
+    text-decoration: none;
+    font-size: 27px;
+}
+.welcome{
+    font-size: 15px;
+}

@@ -1,0 +1,36 @@
+.header-digital{
+    background-image: url('../image/header.jpg');
+    background-repeat-x: no-repeat;
+    height: 80px;
+    margin-top: -28px;
+
+}
+.header-digital p{
+    color: white;
+    font-family: sans-serif;
+    font-weight:bold;
+    padding-top: 5px;
+    padding-left: 80px;
+}
+.menu{
+    background-image: url('../image/menu.jpg');
+    background-repeat-x: no-repeat;
+    height:32px;
+}
+.menu ul{
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 8px;
+}
+.menu a{
+    color: white;
+    font-family: sans-serif;
+    font-weight:bold;
+    padding-left: 40px;
+    text-decoration: none;
+}
+.preheader{
+    background-image: url('../image/preheader.jpg');
+    background-repeat: no-repeat;
+    height: 78px;
+}

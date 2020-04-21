@@ -1,0 +1,25 @@
+.wrap-right{
+    width: 140px;  
+    background-color: #94393c;
+}
+.title-share{
+     width: 140px;
+     height: 25px;
+     background-color: #303030;
+}
+.title-share p{
+    padding-top: 3px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.social{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.all-link{
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.linkShare{
+    padding-left: 5px;
+}

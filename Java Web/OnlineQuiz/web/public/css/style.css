@@ -1,0 +1,41 @@
+body {
+    background-image: url("/OLQuiz/images/bg.jpg");
+    background-repeat-y: no-repeat;
+}
+.container{
+    width: 700px;
+    margin:auto;
+}
+.content{
+    background-color: white;
+    min-height: 300px;
+}
+.all{
+    width: 663px;
+    margin: auto;
+    padding-top: 33px;
+    padding-left:40px;
+}
+.flex{
+    display: flex;
+}
+.sizeText{
+    font-size: 16px;
+}
+.fontText{
+    font-family: sans-serif;
+}
+.fontBold{
+    font-weight: bold;
+}
+.warning{
+    padding-top: 40px;
+    padding-left: 40px;
+    color:red;
+}
+.colorText{
+    color:black;
+}
+.colorTitle{
+    color:#0000cc;
+}

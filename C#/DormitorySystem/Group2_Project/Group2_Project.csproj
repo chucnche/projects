@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8E6E2F6-57D6-4C42-8F36-CFC38BE5C48B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Group2_Project</RootNamespace>
+    <AssemblyName>Group2_Project</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\AccountDAO.cs" />
+    <Compile Include="DAL\AdminDAO.cs" />
+    <Compile Include="DAL\AvailibleBookingTimeDAO.cs" />
+    <Compile Include="DAL\DAO.cs" />
+    <Compile Include="DAL\ElectricityWaterBillsDAO.cs" />
+    <Compile Include="DAL\HistoryBookDAO.cs" />
+    <Compile Include="DAL\HistoryPaymentDAO.cs" />
+    <Compile Include="DAL\ManagerDAO.cs" />
+    <Compile Include="DAL\RequestDAO.cs" />
+    <Compile Include="DAL\RoomDAO.cs" />
+    <Compile Include="DAL\StudentDAO.cs" />
+    <Compile Include="DTL\Account.cs" />
+    <Compile Include="DTL\Admin.cs" />
+    <Compile Include="DTL\AvailibleBookingTime.cs" />
+    <Compile Include="DTL\ElectricityWaterBills.cs" />
+    <Compile Include="DTL\HistoryBook.cs" />
+    <Compile Include="DTL\HistoryPayment.cs" />
+    <Compile Include="DTL\Manager.cs" />
+    <Compile Include="DTL\Request.cs" />
+    <Compile Include="DTL\Room.cs" />
+    <Compile Include="DTL\Student.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AdminAvailibleBookingTimeGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminAvailibleBookingTimeGUI.Designer.cs">
+      <DependentUpon>AdminAvailibleBookingTimeGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AdminMainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminMainGUI.Designer.cs">
+      <DependentUpon>AdminMainGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AdminManagerGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminManagerGUI.Designer.cs">
+      <DependentUpon>AdminManagerGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LoginGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LoginGUI.Designer.cs">
+      <DependentUpon>LoginGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerBookRequestGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerBookRequestGUI.Designer.cs">
+      <DependentUpon>ManagerBookRequestGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerElectricityWaterGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerElectricityWaterGUI.Designer.cs">
+      <DependentUpon>ManagerElectricityWaterGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerHomeGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerHomeGUI.Designer.cs">
+      <DependentUpon>ManagerHomeGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerMainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerMainGUI.Designer.cs">
+      <DependentUpon>ManagerMainGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerStudentGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerStudentGUI.Designer.cs">
+      <DependentUpon>ManagerStudentGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerStudentRequestGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerStudentRequestGUI.Designer.cs">
+      <DependentUpon>ManagerStudentRequestGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManagerViewRoomInforGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManagerViewRoomInforGUI.Designer.cs">
+      <DependentUpon>ManagerViewRoomInforGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentBookBedGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentBookBedGUI.Designer.cs">
+      <DependentUpon>StudentBookBedGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentBookingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentBookingDialog.Designer.cs">
+      <DependentUpon>StudentBookingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentElectricityWaterBillGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentElectricityWaterBillGUI.Designer.cs">
+      <DependentUpon>StudentElectricityWaterBillGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentHomeGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentHomeGUI.Designer.cs">
+      <DependentUpon>StudentHomeGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentMainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentMainGUI.Designer.cs">
+      <DependentUpon>StudentMainGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentPaymentHistoryGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentPaymentHistoryGUI.Designer.cs">
+      <DependentUpon>StudentPaymentHistoryGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentRequestGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentRequestGUI.Designer.cs">
+      <DependentUpon>StudentRequestGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\StudentViewRoomInforGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentViewRoomInforGUI.Designer.cs">
+      <DependentUpon>StudentViewRoomInforGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AdminAvailibleBookingTimeGUI.resx">
+      <DependentUpon>AdminAvailibleBookingTimeGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AdminMainGUI.resx">
+      <DependentUpon>AdminMainGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AdminManagerGUI.resx">
+      <DependentUpon>AdminManagerGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LoginGUI.resx">
+      <DependentUpon>LoginGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerBookRequestGUI.resx">
+      <DependentUpon>ManagerBookRequestGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerElectricityWaterGUI.resx">
+      <DependentUpon>ManagerElectricityWaterGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerHomeGUI.resx">
+      <DependentUpon>ManagerHomeGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerMainGUI.resx">
+      <DependentUpon>ManagerMainGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerStudentGUI.resx">
+      <DependentUpon>ManagerStudentGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerStudentRequestGUI.resx">
+      <DependentUpon>ManagerStudentRequestGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManagerViewRoomInforGUI.resx">
+      <DependentUpon>ManagerViewRoomInforGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentBookBedGUI.resx">
+      <DependentUpon>StudentBookBedGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentBookingDialog.resx">
+      <DependentUpon>StudentBookingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentElectricityWaterBillGUI.resx">
+      <DependentUpon>StudentElectricityWaterBillGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentHomeGUI.resx">
+      <DependentUpon>StudentHomeGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentMainGUI.resx">
+      <DependentUpon>StudentMainGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentPaymentHistoryGUI.resx">
+      <DependentUpon>StudentPaymentHistoryGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentRequestGUI.resx">
+      <DependentUpon>StudentRequestGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentViewRoomInforGUI.resx">
+      <DependentUpon>StudentViewRoomInforGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookBed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HistoryPayment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManagerStudent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvailBookTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElectricWater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookBed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElectricWater1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HistoryPayment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Request.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomInfo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManagerStudent1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RequestBooking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElectricWater2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Request1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

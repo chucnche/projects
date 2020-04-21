@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Album Ảnh</title>
+        <meta charset="UTF-8">
+        <!--        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .gallery{width: 100%;
+         margin: 0px;
+         padding: 0px;
+         float: left;}
+.thanhchon{float: left;
+           width: 100%;
+           text-align: center;
+           margin-bottom: 10px;}
+.thanhchon a{border: 1px solid #ededed;
+             color: #878787;
+             cursor: pointer;
+             margin: 0 -1px 0px -3px;
+             padding: 0px 22px;
+             display: inline-block;
+             line-height: 50px;
+}
+#noideanh,#noideanh1{display: block;
+                     clear: both;
+                     margin: 40px 0 0;
+                     padding: 0px;
+                     width: 100%;
+}
+
+        </style>
+    
+        <script>
+            function run(x) {
+    var k = "";
+    var aha = x.trim().toLowerCase();
+    if (aha == "tất cả") {
+        k += thuvien();
+    }
+    document.getElementById("noideanh").innerHTML = k;
+}
+            albumanh = ["K01.PNG", "K02.PNG", "K03.PNG"];
+            function ua(){
+    var s = "<table>";
+    var sohang = 3;
+    var socot = 5;
+    for (var i = 0; i < sohang; i++) {
+        s += "<tr>";
+        for (var j = 0; j < socot; j++) {
+            s += "<td><img src='../image/" + albumanh[i * socot + j] + "' style='width: 100%'/></td>";
+        }
+        s += "</tr>";
+    }
+    s += "</table>";
+    s += "<div class='loadmore'><button type='button' onclick ='morong()'>Xem thêm<span></span></button></div>";
+    return s;
+}
+function thuvien() {
+    var s = "<table>";
+    var sohang = 3;
+    var socot = 5;
+    for (var i = 0; i < sohang; i++) {
+        s += "<tr>";
+        for (var j = 0; j < socot; j++) {
+            s += "<td><img src='../image/" + albumanh[i * socot + j] + "' style='width: 100%'/></td>";
+        }
+        s += "</tr>";
+    }
+    s += "</table>";
+    s += "<div class='loadmore'><button type='button' onclick ='morong()'>Xem thêm<span></span></button></div>";
+    return s;
+}
+        </script>
+    </head>
+    <body>
+        <header id="header">          
+            <nav class="navbar navbar-expand-lg  text-warning bg-dark static-top">
+                <a class="navbar-brand" href="/BookingHotel/home" style="padding-left: 10%">
+                    <img src="image/logo.png" alt="" style="width: 80%"/>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="nav-item active" style="padding: 0 15px 0 15px">
+                            <a class="nav-link" href="/BookingHotel/home">Trang chủ
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 15px 0 15px">
+                            <a class="nav-link" href="/BookingHotel/about">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 15px 0 15px">
+                            <a class="nav-link" href="/BookingHotel/kind">Loại Phòng</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 15px 0 15px">
+                            <a class="nav-link" href="#">Dịch Vụ</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 15px 0 15px">
+                            <a class="nav-link" href="/BookingHotel/gallery">Ảnh</a>
+                        </li>
+                        <!--                        <li class="nav-item" style="padding: 0 15px 0 15px">
+                                                    <a class="nav-link" href="#" style="color: black;">Liên Hệ</a>
+                                                </li>-->
+                        <li class="nav-item" style="padding: 0 15px 0 15px">
+                            <a class="nav-link" href="/BookingHotel/book" >Đặt Phòng</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right " style="padding-left: 50px">
+                        <li style="padding: 0 10px 0 10px" class="nav-item" ><a href="/BookingHotel/signup" class="nav-link"><span class="glyphicon glyphicon-user"></span> Đăng Ký</a></li>
+                        <li class="nav-item"><a href="/BookingHotel/login" class="nav-link"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <img src="..\image\K01.PNG" alt=""/>
+        <img src="/image/slide1.jpg" alt=""/>
+        <div id="main">
+            <div class="container">
+                <div class="space"></div>
+                <section class="gallery">
+                    <div class="thanhchon">
+                        <a id="a1" onclick="run(this.innerHTML)">Tất cả</a>
+                        <a id="a1" onclick="run(this.innerHTML)">Châu Lục</a>
+                        <a id="a1" onclick="run(this.innerHTML)">Quốc Gia</a>
+                        <a id="a1" onclick="run(this.innerHTML)">Điểm đến</a>
+                        <a id="a1" onclick="run(this.innerHTML)">Nổi bật</a>
+                        <a id="a1" onclick="run(this.innerHTML)">Khách sạn</a>
+                    </div>
+                    <div id="noideanh"><script>ua();</script></div>
+                </section>
+            </div>
+        </div>
+        <div class="space"></div>
+        <footer class="page-footer font-small indigo bg-dark" style="margin-top: 50px">
+            <div class="container text-center text-md-left" style="padding-top: 20px">
+                <div class="row">
+                    <div class="col-md-3 mx-auto">
+                        <h4>Hotline</h4>    
+                        <div class="khung-detail" style="padding-bottom: 20px">
+                            <span style="left: 0;position: absolute;top: 6px;font-size: 20px;"><img src="image/hotline.PNG" alt=""/></span>  
+                            <i class="fa fa-phone" aria-hidden="true" style="color: white"></i>
+                            <h5>0975403426</h5>
+                            <p>Hoạt động 24/7</p>
+                        </div>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Phản Hồi</h5>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Dịch vụ và hỗ trợ</h5>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 mx-auto">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Mạng xã hội</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

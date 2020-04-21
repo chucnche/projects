@@ -1,0 +1,23 @@
+.titleContact{
+    font-size: 20px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+}
+.titlePhoto{
+   font-size: 17px; 
+   padding-bottom: 8px;
+}
+.imgContact{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.inforImage{
+    width: 99%;
+}
+.tel{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.pt{
+    padding-top: 2px;
+}

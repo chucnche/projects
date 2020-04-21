@@ -1,0 +1,35 @@
+.inputNumberQuesions{
+    width: 80px;
+}
+.buttonStart{
+    padding-left: 185px;
+}
+.userTakeQuiz{
+    padding-left: 5px;
+}
+.hidden {
+    display: none;
+}
+.buttonNextFinish{
+    padding-left: 400px;
+    padding-bottom: 100px;
+}
+.question p{
+    margin: 0 auto;
+    padding-top: 3px;
+    display: flex;
+}
+.score{
+    padding-right: 5px;
+}
+.time{
+    padding-left: 250px;
+}
+.anotherTitle{
+    padding-right: 5px;
+    padding-top: 3px;
+}
+.timeRemaining{
+    padding-left: 5px;
+    color:red;
+}

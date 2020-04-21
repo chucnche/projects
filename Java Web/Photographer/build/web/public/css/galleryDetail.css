@@ -1,0 +1,51 @@
+.galleryCurrentImage{
+width: 98.5%;
+}
+.sub-gallery{
+    box-shadow: 0 7px 16px rgba(0,0,0,.4);
+    border-radius: 50%;
+    float: left;
+    width: 88.51px;
+    margin-right: 12px;
+    padding-right: 12px;
+    margin-bottom: 7px;
+}
+.sub-img{
+    width: 100%;
+    background-color: white;
+    height: 65px;
+    border-radius: 5px;
+    border-right: 7px solid white;
+    border-top: 22px solid white;
+    border-bottom: 22px solid white;
+    border-left: 7px solid white;
+}
+.imageOtherGalleryDetail{
+    width: 100%
+
+}
+.pagingDetail{
+    margin-top: 200px;
+    padding-bottom: 30px;
+}
+.pagingDetail p {
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 0px;
+}
+.pagingDetail a{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.warp-galleryCurrentImage{
+    width: 450px;
+    height:330px;
+}
+.otherImage{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.galleryCurrentName{
+    font-size: 20px;
+}

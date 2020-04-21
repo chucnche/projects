@@ -1,0 +1,15 @@
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\bin\Debug\GROUP2_LAB3.exe.config
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\bin\Debug\GROUP2_LAB3.exe
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\bin\Debug\GROUP2_LAB3.pdb
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.csprojAssemblyReference.cache
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.GUI.MainGUI.resources
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.Properties.Resources.resources
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.csproj.GenerateResource.cache
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.exe
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.pdb
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.GUI.BookGUI.resources
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.GUI.MemberGUI.resources
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.GUI.BorrowGUI.resources
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.GUI.ReturnGUI.resources
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.DAL.ReserveGUI.resources
+C:\Users\acer\source\repos\GROUP2_LAB3\GROUP2_LAB3\obj\Debug\GROUP2_LAB3.GUI.AboutGUI.resources

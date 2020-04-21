@@ -1,0 +1,27 @@
+
+.right-top1{
+    margin: 0 auto;
+    padding-top:15px;   
+    padding-bottom: 6px;
+}
+.search{
+    border-style: dotted;
+    border-color: gray;
+    width: 140px;
+}
+.button{
+    border-style: none;
+    background: none;
+}
+.LastAr{
+    padding-top: 25px;
+}
+.linkTopFive{
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.mapa{
+    margin: 0 auto;
+    padding-bottom:6px;
+}
+
